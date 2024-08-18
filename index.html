@@ -28,9 +28,7 @@
         // Initialize ThoughtSpot Embed SDK
         init({
           thoughtSpotHost: "https://team3.thoughtspot.cloud",
-          authType: AuthType.TrustedAuthTokenCookieless,
-          getAuthToken: getTokenService,
-          disableTokenVerification: true,
+          authType: AuthType.None,
         });
 
         // Embed the Liveboard
