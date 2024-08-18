@@ -11,7 +11,7 @@ const App = () => {
             thoughtSpotHost: "https://team3.thoughtspot.cloud/",
             authType: AuthType.Basic,
             username: "ash@fiftyfivegroup.com.au",
-			password: "DX3w#fC6*mdTtm!eGswg",
+	    password: "DX3w#fC6*mdTtm!eGswg",
         });
 
         const embed = new LiveboardEmbed('#ts-embed', {
