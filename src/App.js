@@ -30,7 +30,7 @@ const App = () => {
         <div style={{ width: '100%', height: '100vh' }}>
             <div id="ts-embed"></div>
         </div>
-    );*/
+    );
 
 import { init, AppEmbed, AuthType } from "@thoughtspot/visual-embed-sdk"; import React, { useEffect } from "react";
 
@@ -55,6 +55,26 @@ export default function App() {
   );
 }
 
-};
+};*/
+
+
+import React, { useEffect } from 'react';
+
+export default function App() {
+  useEffect(() => {
+    console.log('App component rendered'); // Test log
+    const embed = new AppEmbed("#embed", {
+      modularHomeExperience: true,
+    }).render();
+  }, []);
+
+  return (
+    <div id="body">
+      <h1>Loading Dashboard...</h1>  {/* Test message */}
+      <div id="embed"></div>
+    </div>
+  );
+}
+
 
 export default App;
